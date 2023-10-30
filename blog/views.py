@@ -39,3 +39,4 @@ def blog_search(request):
             
     context={'posts': posts}
     return render(request,'blog/blog_home.html', context)
+ 

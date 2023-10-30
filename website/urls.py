@@ -3,6 +3,8 @@ from django.contrib import admin
 from django.urls import path
 from website.views import *
 
+
+
 app_name = 'website'
 
 urlpatterns = [
@@ -11,3 +13,4 @@ urlpatterns = [
     path('about', about_view, name='about'),
     path('contact', contact_view, name='contact'),
 ]
+ 

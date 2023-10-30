@@ -3446,7 +3446,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .post-content-area .single-post .feature-img img {
-  width: 100%;
+  width: 500px;
 }
 
 .post-content-area .single-post .posts-title h3 {
@@ -3655,7 +3655,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .widget-wrap .popular-post-widget .popular-post-list .thumb img {
-  width: 100%;
+  width: 100px;
+  max-width: 100px;
 }
 
 .widget-wrap .popular-post-widget .single-post-list {
