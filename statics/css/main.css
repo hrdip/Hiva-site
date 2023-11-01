@@ -980,7 +980,7 @@ h1, h2, h3, h4, h5, h6 {
 .genric-btn {
   display: inline-block;
   outline: none;
-  line-height: 40px;
+  line-height: 37px;
   padding: 0 30px;
   font-size: .8em;
   text-align: center;
@@ -2937,6 +2937,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .recent-blog-area .single-recent-blog-post .thumb img {
+  width: 700px;
+  height: 250px ;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;

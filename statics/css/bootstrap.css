@@ -240,7 +240,7 @@ figure {
 }
 
 img {
-  width: 200px;
+  /*!width: 200px; */
   vertical-align: middle;
   border-style: none;
 }

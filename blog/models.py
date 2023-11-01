@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from sorl.thumbnail import ImageField
+from django.urls import reverse
 # Create your models here.
 
 class Category(models.Model):
@@ -38,5 +39,9 @@ class Post(models.Model):
    
     class Meta:
         ordering = ('-created_date',)
+    
     def __str__(self):
         return "{}-{}".format(self.title, self.id)
+    
+    def get_absolute_url(self):
+        return reverse('blog:single', kwargs={'pid':self.id})
