@@ -3448,7 +3448,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .post-content-area .single-post .feature-img img {
-  width: 500px;
+  width: 100%;
 }
 
 .post-content-area .single-post .posts-title h3 {
