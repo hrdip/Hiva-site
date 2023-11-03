@@ -3,6 +3,9 @@ from blog.models import Post, Comment
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 from django.contrib import messages
 from blog.forms import CommentForm
+from django.urls import reverse
+from django.http import HttpResponseRedirect
+
 
 def blog_view (request,**kwargs):
     posts = Post.objects.filter(status=1)
@@ -34,9 +37,12 @@ def blog_single (request,pid):
 
     posts = Post.objects.filter(status=1)
     post = get_object_or_404(posts,pk=pid)
-    comments = Comment.objects.filter(post=post.id, approved=True)
-    context={'post': post, 'comments':comments}
-    return render(request,'blog/blog_single.html', context)
+    if not post.login_required:
+        comments = Comment.objects.filter(post=post.id, approved=True)
+        context={'post': post, 'comments':comments}
+        return render(request,'blog/blog_single.html', context)
+    else:
+        return render(request,'accounts/signup.html', context)
 
 def blog_category(request,cat_name):
     posts = Post.objects.filter(status=1)

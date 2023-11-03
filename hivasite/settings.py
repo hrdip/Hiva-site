@@ -48,7 +48,8 @@ INSTALLED_APPS = [
     'debug_toolbar',
     'django_extensions',
     'website.apps.WebsiteConfig',
-    'blog'
+    'blog',
+    'accounts',
 ]
 
 # sites framework
