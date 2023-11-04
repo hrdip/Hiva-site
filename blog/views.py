@@ -39,7 +39,9 @@ def blog_single (request,pid):
     post = get_object_or_404(posts,pk=pid)
     if not post.login_required:
         comments = Comment.objects.filter(post=post.id, approved=True)
-        context={'post': post, 'comments':comments}
+        next = posts.filter(id__gt=post.id).order_by('id').first()
+        previous = posts.filter(id__lt=post.id).order_by('-id').first()
+        context={'post': post, 'comments':comments, 'next': next, 'previous': previous}
         return render(request,'blog/blog_single.html', context)
     else:
         return render(request,'accounts/signup.html', context)
@@ -59,3 +61,4 @@ def blog_search(request):
     context={'posts': posts}
     return render(request,'blog/blog_home.html', context)
  
+
