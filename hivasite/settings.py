@@ -165,6 +165,7 @@ INTERNAL_IPS = [
     '127.0.0.1',
 ]
 
+
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 #---------------EMAIL PROPERTIES
@@ -178,3 +179,4 @@ EMAIL_USE_TLS = True
 # Port for sending e-mail.
 EMAIL_PORT = 25
 EMAIL_HOST_USER = 'hrdip.2018@gmail.com'
+X_FRAME_OPTIONS = 'SAMEORIGIN'
