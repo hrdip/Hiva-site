@@ -164,7 +164,6 @@ INTERNAL_IPS = [
     '127.0.0.1',
 ]
 
-<<<<<<< HEAD
 
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
@@ -186,6 +185,4 @@ X_FRAME_OPTIONS = 'SAMEORIGIN'
 EMAIL_HOST_PASSWORD = ''
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
-=======
-X_FRAME_OPTIONS = 'SAMEORIGIN'
->>>>>>> parent of 68c89e1 (next post and previous post)
+
