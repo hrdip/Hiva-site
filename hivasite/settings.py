@@ -178,8 +178,8 @@ EMAIL_USE_TLS = True
 # Port for sending e-mail.
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'hrdip.2018@gmail.com'
-<<<<<<< HEAD
+
 X_FRAME_OPTIONS = 'SAMEORIGIN'
-=======
+
 EMAIL_HOST_PASSWORD = ''
->>>>>>> parent of d33975a (s)
+
