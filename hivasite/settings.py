@@ -73,7 +73,6 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'debug_toolbar.middleware.DebugToolbarMiddleware',
-      
 ]
 
 ROOT_URLCONF = 'hivasite.urls'
@@ -168,15 +167,19 @@ INTERNAL_IPS = [
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-#---------------EMAIL PROPERTIES
+#EMAIL PROPERTIES
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 # Host for sending e-mail.
-EMAIL_HOST = 'localhost'
+EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
 
 # Port for sending e-mail.
-EMAIL_PORT = 25
+EMAIL_PORT = 587
 EMAIL_HOST_USER = 'hrdip.2018@gmail.com'
+<<<<<<< HEAD
 X_FRAME_OPTIONS = 'SAMEORIGIN'
+=======
+EMAIL_HOST_PASSWORD = ''
+>>>>>>> parent of d33975a (s)
