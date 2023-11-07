@@ -49,7 +49,8 @@ INSTALLED_APPS = [
     'django_extensions',
     'website.apps.WebsiteConfig',
     'blog',
-    'accounts',
+    'members',
+    
 ]
 
 # sites framework
@@ -182,7 +183,13 @@ EMAIL_HOST_USER = 'hrdip.2018@gmail.com'
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-EMAIL_HOST_PASSWORD = ''
+EMAIL_HOST_PASSWORD = 'bwmnbzuasdqfxfzf'
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
+LOGIN_REDIRECT_URL = '/'
+LOGINOUT_REDIRECT_URL = '/'
+LOGIN_URL = 'login'
+LOGOUT_URL = 'logout'
+SIGNUP_URL = 'signup'
+CHANGE_PASSWORD_REDIRECT_URL = 'login'
