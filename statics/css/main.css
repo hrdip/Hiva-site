@@ -612,6 +612,10 @@ td, th {
   color: #fff;
 }
 
+.text-gold {
+  color: #ffdf00;
+}
+
 .text-black {
   color: #000;
 }
@@ -2522,9 +2526,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
-@media (max-width: 991px) and (min-width: 768px) {
+@media (max-width: 1500px) and (min-width: 768px) {
   .banner-left h1 {
-    font-size: 36px;
+    
+    font-size : 36px;
   }
   .banner-left h6 {
     font-size: 12px;

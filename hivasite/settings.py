@@ -187,6 +187,9 @@ EMAIL_HOST_PASSWORD = 'bwmnbzuasdqfxfzf'
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
+
+#authentication properties
+ 
 LOGIN_REDIRECT_URL = '/'
 LOGINOUT_REDIRECT_URL = '/'
 LOGIN_URL = 'login'

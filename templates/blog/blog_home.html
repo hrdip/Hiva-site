@@ -2,13 +2,13 @@
 {% load static %}
 {% load blog_tags %}
 {% block content %}
-
+ 
 <!-- start banner Area -->
 <section class="banner-area relative blog-home-banner" id="home">
 	<div class="overlay overlay-bg"></div>
 	<div class="container">
-		<div class="row d-flex align-items-center justify-content-center">
-			<div class="about-content blog-header-content col-lg-12">
+		<div class="row fullscreen align-items-center justify-content-between">
+			<div class="col-lg-6 col-md-6 banner-left">
 				<h1 class="text-white">
 					{{post.title}}
 				</h1>
@@ -22,9 +22,11 @@
 <!-- End banner Area -->
 
 <!-- Start top-category-widget Area -->
+
 <section class="top-category-widget-area pt-90 pb-90 ">
 	<div class="container">
 		<div class="row">
+			<!--
 			<div class="col-lg-4">
 				<div class="single-cat-widget">
 					<div class="content relative">
@@ -79,9 +81,11 @@
 					</div>
 				</div>
 			</div>
+			-->
 		</div>
 	</div>
 </section>
+
 <!-- End top-category-widget Area -->
 
 <!-- Start post-content Area -->
