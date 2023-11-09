@@ -16,17 +16,6 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-3kv^w08)n(r6e1#b1h&r@t8olb@1grzn%3p7y_!fdli^$172l@'
-
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -53,8 +42,7 @@ INSTALLED_APPS = [
     
 ]
 
-# sites framework
-SITE_ID = 1
+
 
 # robots
 ROBOTS_USE_HOST = False
@@ -97,15 +85,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'hivasite.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
 
 
 # Password validation
@@ -145,15 +125,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR /'static/'
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR /'media/'
 
-STATICFILES_DIRS = [
-    BASE_DIR/"statics",
-
-]
 
 
 # Default primary key field type
@@ -164,28 +138,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 INTERNAL_IPS = [
     '127.0.0.1',
 ]
-
-
-
-X_FRAME_OPTIONS = 'SAMEORIGIN'
-
-#EMAIL PROPERTIES
-
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-
-# Host for sending e-mail.
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_USE_TLS = True
-
-# Port for sending e-mail.
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'hrdip.2018@gmail.com'
-
-X_FRAME_OPTIONS = 'SAMEORIGIN'
-
-EMAIL_HOST_PASSWORD = ''
-
-X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 
 #authentication properties
