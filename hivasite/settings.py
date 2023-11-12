@@ -148,3 +148,5 @@ LOGIN_URL = 'login'
 LOGOUT_URL = 'logout'
 SIGNUP_URL = 'signup'
 CHANGE_PASSWORD_REDIRECT_URL = 'login'
+
+
